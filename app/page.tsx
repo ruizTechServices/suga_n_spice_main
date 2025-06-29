@@ -1,5 +1,6 @@
 'use client';
 import React, { useState } from 'react';
+import Image from 'next/image';
 import { ShoppingCart, Plus, Minus } from 'lucide-react';
 import { Button } from '../components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card';
@@ -336,9 +337,11 @@ export default function App() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
             <div className="bg-white/80 backdrop-blur rounded-lg p-6 border border-brand-orange/20 shadow-sm">
               <div className="w-16 h-16 rounded-full overflow-hidden mx-auto mb-4 border-2 border-brand-orange">
-                <img 
+                <Image 
                   src={empanadaImage} 
                   alt="Fresh Empanadas" 
+                  width={64}
+                  height={64}
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -347,9 +350,11 @@ export default function App() {
             </div>
             <div className="bg-white/80 backdrop-blur rounded-lg p-6 border border-brand-orange/20 shadow-sm">
               <div className="w-16 h-16 rounded-full overflow-hidden mx-auto mb-4 border-2 border-brand-orange">
-                <img 
+                <Image 
                   src={churrosImage} 
                   alt="Fresh Churros" 
+                  width={64}
+                  height={64}
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -358,9 +363,11 @@ export default function App() {
             </div>
             <div className="bg-white/80 backdrop-blur rounded-lg p-6 border border-brand-orange/20 shadow-sm">
               <div className="w-16 h-16 rounded-full overflow-hidden mx-auto mb-4 border-2 border-brand-orange">
-                <img 
+                <Image 
                   src={drinksImage} 
                   alt="Fresh Drinks" 
+                  width={64}
+                  height={64}
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -374,9 +381,11 @@ export default function App() {
         <section>
           <div className="flex flex-col md:flex-row gap-6 mb-6">
             <div className="md:w-1/3">
-              <img 
+              <Image 
                 src={empanadaImage} 
                 alt="Delicious Empanadas" 
+                width={400}
+                height={320}
                 className="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg border border-brand-orange/20"
               />
             </div>
@@ -404,9 +413,11 @@ export default function App() {
         <section>
           <div className="flex flex-col md:flex-row gap-6 mb-6">
             <div className="md:w-1/3">
-              <img 
+              <Image 
                 src={churrosPlateImage} 
                 alt="Delicious Churros" 
+                width={400}
+                height={320}
                 className="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg border border-brand-orange/20"
               />
             </div>
@@ -434,9 +445,11 @@ export default function App() {
         <section>
           <div className="flex flex-col md:flex-row gap-6 mb-6">
             <div className="md:w-1/3">
-              <img 
+              <Image 
                 src={drinksImage} 
                 alt="Refreshing Drinks" 
+                width={400}
+                height={320}
                 className="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg border border-brand-orange/20"
               />
             </div>
